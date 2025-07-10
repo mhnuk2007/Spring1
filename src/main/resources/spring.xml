@@ -4,7 +4,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="alien1" class="com.learning.Alien" scope="prototype"></bean>
-    <bean id="alien2" class="com.learning.Alien"></bean>
+    <bean id="alien1" class="com.learning.Alien" >
+        <property name="age" value="26"></property>
+        <property name="lap" ref="lap"></property>
+    </bean>
+    <bean id="alien2" class="com.learning.Alien">
+
+    </bean>
     <bean id="lap" class="com.learning.Laptop"></bean>
 </beans>
