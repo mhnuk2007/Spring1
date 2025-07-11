@@ -6,7 +6,7 @@
 
     <bean id="alien1" class="com.learning.Alien" autowire="byType">
         <property name="age" value="25"/>
-        <property name="com" ref="com1"/>
+        <property name="com" ref="com2"/>
 
     </bean>
 
