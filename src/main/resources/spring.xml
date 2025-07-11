@@ -5,9 +5,9 @@
 
 
     <bean id="alien1" class="com.learning.Alien" >
-        <constructor-arg name="age" value="27"/>
-        <constructor-arg name="lap" ref="lap1"/>
-    </bean>
+        <constructor-arg name="lap" type="com.learning.Laptop" ref="lap1"/>
+        <constructor-arg name="age" type="int" value="27"/>
+            </bean>
 
     <bean id="lap1" class="com.learning.Laptop"></bean>
     <bean id="lap2" class="com.learning.Laptop"></bean>
