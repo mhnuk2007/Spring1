@@ -11,6 +11,9 @@ public class App {
         obj1.code();
 
 
+        Laptop laptop = (Laptop) context.getBean("com2");
+
+
 
 
     }

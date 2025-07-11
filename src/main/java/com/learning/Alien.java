@@ -5,16 +5,10 @@ public class Alien {
     private Computer com;
 
     public Alien() {
-        System.out.println("Alien object is created");
+        System.out.println("Alien object created");
     }
 
-//    public Alien(int age, Laptop lap) {
-//        System.out.println("Parameterized constructor called");
-//        this.age = age;
-//        this.lap = lap;
-//    }
-
-    public void setAge(int age) {
+        public void setAge(int age) {
         System.out.println("Setter for age called");
         this.age = age;
     }
