@@ -10,11 +10,14 @@ public class App {
         System.out.println(obj1.getAge());
         obj1.code();
 
+        //getBean by Type Only
+        Laptop LaptopBeanByType = context.getBean(Laptop.class);
 
-        Laptop laptop = (Laptop) context.getBean("com2");
+        //getBean by Name Only
+        Desktop DesktopBeanByName = (Desktop) context.getBean("com2");
 
-
-
+        //getBean by Name and Type
+        Desktop DesktopBeanByNameAndType = context.getBean("com3", Desktop.class);
 
     }
 }

@@ -4,17 +4,20 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="alien1" class="com.learning.Alien" autowire="byType">
+    <bean id="alien1" class="com.learning.Alien" >
         <property name="age" value="25"/>
-        <property name="com" ref="com2"/>
+        <property name="com" ref="com1"/>
 
     </bean>
 
         <!--        <constructor-arg index="1" ref="lap1"/>-->
         <!--        <constructor-arg index="0" value="27"/>-->
 
-    <bean id="com1" class="com.learning.Desktop" primary="true"/>
-    <bean id="com2" class="com.learning.Laptop" lazy-init="true"/>
+    <bean id="com1" class="com.learning.Desktop" lazy-init="true"/>
+    <bean id="com2" class="com.learning.Desktop" lazy-init="true"/>
+    <bean id="com3" class="com.learning.Desktop" lazy-init="true"/>
+    <bean id="com4" class="com.learning.Laptop" lazy-init="true"/>
+
 
 
 </beans>
