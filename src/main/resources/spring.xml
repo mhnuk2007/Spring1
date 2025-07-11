@@ -5,11 +5,10 @@
 
 
     <bean id="alien1" class="com.learning.Alien" >
-        <property name="age" value="26"></property>
-        <property name="lap" ref="lap1"></property>
+        <constructor-arg name="age" value="27"/>
+        <constructor-arg name="lap" ref="lap1"/>
     </bean>
-    <bean id="alien2" class="com.learning.Alien">
 
-    </bean>
     <bean id="lap1" class="com.learning.Laptop"></bean>
+    <bean id="lap2" class="com.learning.Laptop"></bean>
 </beans>

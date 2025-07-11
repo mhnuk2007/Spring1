@@ -8,6 +8,12 @@ public class Alien {
         System.out.println("Alien object is created");
     }
 
+    public Alien(int age, Laptop lap) {
+        System.out.println("Parameterized constructor called");
+        this.age = age;
+        this.lap = lap;
+    }
+
     public void setAge(int age) {
         System.out.println("Setter for age called");
         this.age = age;
